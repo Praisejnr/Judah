@@ -778,6 +778,21 @@ img {
   font-size: 50px;
 }
 
+.wrapper {
+  animation: fadein linear;
+  animation-timeline: view();
+  animation-range: entry 0% cover 50%;
+}
+
+@keyframes fadein {
+  20% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 @media (max-width: 750px) {
   :root {
     --sm-txt: 0.8rem;
@@ -1027,18 +1042,18 @@ img {
   }
 
   #close_cookies_modal,
-#close_orientation_modal {
-  position: absolute;
-  font-size: 15px;
-  font-weight: 800;
-  top: 40%;
-  left: 85%;
-  cursor: pointer;
-}
+  #close_orientation_modal {
+    position: absolute;
+    font-size: 15px;
+    font-weight: 800;
+    top: 40%;
+    left: 85%;
+    cursor: pointer;
+  }
 
-.home{
-  height: 120vh;
-}
+  .home {
+    height: 120vh;
+  }
 }
 
 /* MEDIA QUERY FOR OTHER SIZES */
