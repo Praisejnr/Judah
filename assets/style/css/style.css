@@ -694,7 +694,7 @@ img {
   display: none;
   flex-direction: column;
   width: 100%;
-  height: 100vh;
+  height: 100%;
   background-color: #111;
   position: fixed;
   justify-content: center;
@@ -1025,6 +1025,20 @@ img {
     align-items: flex-start;
     gap: 5px;
   }
+
+  #close_cookies_modal,
+#close_orientation_modal {
+  position: absolute;
+  font-size: 15px;
+  font-weight: 800;
+  top: 40%;
+  left: 85%;
+  cursor: pointer;
+}
+
+.home{
+  height: 120vh;
+}
 }
 
 /* MEDIA QUERY FOR OTHER SIZES */
